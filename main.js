@@ -1,4 +1,5 @@
 import input from 'input';
+
 function say(num) {
     switch(num) {
         case '1':
@@ -36,8 +37,10 @@ function say(num) {
 }
 
 async function main() {
-    const num = await input.text('Enter a number');
-    say(num);
+    for (let i = 1; i <= 10; i += 1) {
+        let iStr = i.toString();
+    say(iStr);
+    }
 }
 
 main();
