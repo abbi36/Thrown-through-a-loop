@@ -1,19 +1,21 @@
 import input from 'input';
 
-const shopping = [
-    'Apples',
-    'Bananas',
-    'Pears',
-    'Oranges',
-];
+function square(size) {
+    const char = '*';
+    for (let i = 0; i <= size; i += 1){
+        let output = '';
 
-
-async function main() {
-    console.log('Here is your shopping list');
-    console.log('===========================');
-    for( let element of shopping) {
-        console.log(' - ' , element );
+    if (i == 0 || i == size) {
+        console.log(char.repeat(9));
+    } else {
+        console.log(char + '\t' + char);
+    }
+        console.log(output);
     }
 }
+async function main() {
+    square(9);
+    }
+
 
 main();
