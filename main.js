@@ -12,7 +12,7 @@ async function main() {
     console.log('Here is your shopping list');
     console.log('===========================');
     for( let element of shopping) {
-        console.log(element);
+        console.log(' - ' , element );
     }
 }
 
